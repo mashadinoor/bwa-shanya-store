@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-text product-more text-left">
-                        <a href="./home.html"><i class="fa fa-home"></i> Home</a>
+                        <router-link to="/"><i class="fa fa-home"></i> Home</router-link>
                         <span>Detail</span>
                     </div>
                 </div>
@@ -77,6 +77,8 @@
     </section>
     <!-- Product Shop Section End -->
 
+    <RelatedShayna/>
+
 
     <FooterShayna />
   </div>
@@ -88,6 +90,7 @@ import HeaderShaynaVue from '@/components/HeaderShayna.vue'
 import FooterShayna from '@/components/FooterShayna.vue'
 
 import carousel from 'vue-owl-carousel'
+import RelatedShayna from '../components/RelatedShayna.vue'
 
 
 
@@ -96,8 +99,9 @@ export default {
   components: {
     HeaderShaynaVue,
     FooterShayna,
-    carousel
-  },
+    carousel,
+    RelatedShayna
+},
   data() {
     return {
       gambar_default: "img/mickey1.jpg",
