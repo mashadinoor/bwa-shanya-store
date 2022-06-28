@@ -66,7 +66,7 @@
                               <h4>$495.00</h4>
                             </div>
                             <div class="quantity">
-                              <a href="shopping-cart.html" class="primary-btn pd-cart">Add To Cart</a>
+                              <router-link to="/shoping-cart" class="primary-btn pd-cart">Add To Cart</router-link>
                             </div>
                           </div>
                         </div>
@@ -77,20 +77,20 @@
     </section>
     <!-- Product Shop Section End -->
 
-    <RelatedShayna/>
+    <RelatedShaynaVue />
 
 
-    <FooterShayna />
+    <FooterShaynaVue />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import HeaderShaynaVue from '@/components/HeaderShayna.vue'
-import FooterShayna from '@/components/FooterShayna.vue'
+import FooterShaynaVue from '@/components/FooterShayna.vue'
 
 import carousel from 'vue-owl-carousel'
-import RelatedShayna from '../components/RelatedShayna.vue'
+import RelatedShaynaVue from '../components/RelatedShayna.vue'
 
 
 
@@ -98,9 +98,9 @@ export default {
   name: 'ProductView',
   components: {
     HeaderShaynaVue,
-    FooterShayna,
+    FooterShaynaVue,
     carousel,
-    RelatedShayna
+    RelatedShaynaVue
 },
   data() {
     return {

@@ -25,6 +25,22 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "product" */ '../views/ProductView.vue')
+  },
+  {
+    path: '/shoping-cart',
+    name: 'shoping-cart',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "shoping-cart" */ '../views/ShopingCartView.vue')
+  },
+  {
+    path: '/success',
+    name: 'success',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "success" */ '../views/SuccessView.vue')
   }
 ]
 
